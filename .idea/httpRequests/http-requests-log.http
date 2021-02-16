@@ -1,0 +1,207 @@
+POST http://localhost:81/holybeforumapi/holybeforumapi/public/api/topic
+Content-Type: application/json
+
+{
+"title": "titel",
+"content": "content via de api"
+}
+
+<> 2021-02-13T021247.500.html
+
+###
+
+POST http://localhost:81/holybeforumapi/holybeforumapi/public/api/topic
+Content-Type: application/json
+
+{
+"title": "titel",
+"content": "content via de api"
+}
+
+<> 2021-02-11T094623.404.html
+
+###
+
+POST http://localhost:81/holybeforumapi/holybeforumapi/public/api/topic
+Content-Type: application/json
+
+{
+"title": "titel",
+"content": "content via de api"
+}
+
+<> 2021-02-11T094353.500.html
+
+###
+
+POST http://localhost:81/holybeforumapi/holybeforumapi/public/api/topic
+Content-Type: application/json
+
+{
+"title": "titel",
+"content": "content via de api"
+}
+
+<> 2021-02-11T093846.500.html
+
+###
+
+POST http://localhost:81/holybeforumapi/holybeforumapi/public/api/topic
+Content-Type: application/json
+
+{
+"title": "nog een topic",
+"content": "content via de api"
+}
+
+<> 2021-02-11T093815.500.html
+
+###
+
+POST http://localhost:81/holybeforumapi/holybeforumapi/public/api/topic
+Content-Type: application/json
+
+{
+"title": "nog een topic",
+"content": "content via de api"
+}
+
+<> 2021-02-11T093347.500.html
+
+###
+
+GET http://localhost:81/holybeforumapi/holybeforumapi/public/api/topic
+Accept: application/json
+
+<> 2021-02-11T093339.200.json
+
+###
+
+GET http://localhost:81/holybeforumapi/holybeforumapi/public/api/topic
+Accept: application/json
+
+<> 2021-02-11T093232.500.json
+
+###
+
+POST http://localhost:81/holybeforumapi/holybeforumapi/public/api/topic
+Content-Type: application/json
+
+{
+"title": "nog een topic",
+"content": "content via de api"
+}
+
+<> 2021-02-11T093153.500.html
+
+###
+
+POST http://localhost:81/holybeforumapi/holybeforumapi/public/api/topic
+Content-Type: application/json
+
+{
+"title": "nog een topic",
+"content": "content via de api"
+}
+
+<> 2021-02-11T092423.500.html
+
+###
+
+POST http://localhost:81/holybeforumapi/holybeforumapi/public/api/topics
+Content-Type: application/json
+
+{
+"title": "nog een topic",
+"content": "content via de api"
+}
+
+<> 2021-02-08T074819.404.html
+
+###
+
+POST http://localhost:81/holybeforumapi/holybeforumapi/public/api/topic
+Content-Type: application/json
+
+{
+"title": "nog een topic",
+"content": "content via de api"
+}
+
+<> 2021-02-08T074746.500.html
+
+###
+
+POST http://localhost:81/holybeforumapi/holybeforumapi/public/api/topic
+Content-Type: application/json
+
+{
+"title":"nog een topic via de api",
+"content":"content via de api"
+}
+
+<> 2021-02-08T074630.500.html
+
+###
+
+POST http://localhost:81/holybeforumapi/holybeforumapi/public/api/topic
+Content-Type: application/json
+
+{
+"title":"nog een topic via de api",
+"content":"content via de api"
+}
+
+<> 2021-02-08T074445.500.html
+
+###
+
+GET http://localhost:81/holybeforumapi/holybeforumapi/public/api/topic
+Accept: application/json
+
+<> 2021-02-08T074302.200.json
+
+###
+
+POST http://localhost:81/holybeforumapi/holybeforumapi/public/api/topic
+Content-Type: application/json
+
+{
+"title":"nog een topic via de api",
+"content":"content via de api"
+}
+
+<> 2021-02-08T074055.500.html
+
+###
+
+POST http://localhost:81/holybeforumapi/holybeforumapi/public/api/topic
+Content-Type: application/json
+
+{
+"title":"nog een topic via de api",
+"content":"content via de api"
+}
+
+<> 2021-02-08T073819.500.html
+
+###
+
+POST http://localhost:81/holybeforumapi/holybeforumapi/public/api/topic
+Content-Type: application/json
+{:
+"title"=>"nog een topic via de api",:
+"content"=>"content via de api":
+}:
+
+<> 2021-02-08T073653.400.html
+
+###
+
+GET http://localhost:81/holybeforumapi/holybeforumapi/public/api/topic
+Accept: application/json
+
+<> 2021-02-08T073403.200.json
+
+###
+
