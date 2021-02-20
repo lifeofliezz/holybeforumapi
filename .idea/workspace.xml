@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9e9ca10-4365-4bac-9cc4-1706c9a6f7c7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="b9e9ca10-4365-4bac-9cc4-1706c9a6f7c7" name="Default Changelist" comment="fill controller&#10;topic update&#10;topic delete">
+      <change afterPath="$PROJECT_DIR$/holybeforumapi/app/Http/Controllers/TopicApiController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/holybeforumapi/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/holybeforumapi/routes/api.php" afterDir="false" />
     </list>
@@ -328,12 +328,16 @@
       <updated>1612793817192</updated>
       <workItem from="1612793818335" duration="439000" />
       <workItem from="1612794381641" duration="7782000" />
-      <workItem from="1613075042539" duration="10679000" />
+      <workItem from="1613075042539" duration="12663000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fill controller&#10;topic update&#10;topic delete" />
+    <option name="LAST_COMMIT_MESSAGE" value="fill controller&#10;topic update&#10;topic delete" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2382" y="149" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1613075507870">
@@ -344,6 +348,10 @@
       <screen x="1920" y="0" width="1739" height="978" />
     </state>
     <state x="2584" y="490" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1739.939/1920.0.1739.978@1920.0.1739.978" timestamp="1612805743220" />
+    <state x="2412" y="85" key="CommitChangelistDialog2" timestamp="1613814549888">
+      <screen x="1920" y="0" width="1739" height="978" />
+    </state>
+    <state x="2412" y="85" key="CommitChangelistDialog2/0.0.1739.939/1920.0.1739.978@1920.0.1739.978" timestamp="1613814549888" />
     <state x="2570" y="246" key="FileChooserDialogImpl" timestamp="1612794255860">
       <screen x="1920" y="0" width="1739" height="978" />
     </state>
@@ -368,6 +376,10 @@
       <screen x="1920" y="0" width="1739" height="978" />
     </state>
     <state x="2535" y="305" key="NewPhpClassDialog/0.0.1739.939/1920.0.1739.978@1920.0.1739.978" timestamp="1612804887786" />
+    <state x="2382" y="224" key="Vcs.Push.Dialog.v2" timestamp="1613814404276">
+      <screen x="1920" y="0" width="1739" height="978" />
+    </state>
+    <state x="2382" y="224" key="Vcs.Push.Dialog.v2/0.0.1739.939/1920.0.1739.978@1920.0.1739.978" timestamp="1613814404276" />
     <state x="2486" y="315" key="com.intellij.ide.util.TipDialog" timestamp="1613075046680">
       <screen x="1920" y="0" width="1739" height="978" />
     </state>
@@ -376,6 +388,10 @@
       <screen x="1920" y="0" width="1739" height="978" />
     </state>
     <state x="2113" y="141" width="614" height="804" key="find.popup/0.0.1739.939/1920.0.1739.978@1920.0.1739.978" timestamp="1612808403784" />
+    <state x="2606" y="336" key="git4idea.ui.GitTagDialog" timestamp="1613812845609">
+      <screen x="1920" y="0" width="1739" height="978" />
+    </state>
+    <state x="2606" y="336" key="git4idea.ui.GitTagDialog/0.0.1739.939/1920.0.1739.978@1920.0.1739.978" timestamp="1613812845609" />
     <state x="2452" y="210" width="672" height="678" key="search.everywhere.popup" timestamp="1613811913987">
       <screen x="1920" y="0" width="1739" height="978" />
     </state>
