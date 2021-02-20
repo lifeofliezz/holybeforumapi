@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Models\Topic;
+use App\Http\Controllers\TopicApiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,25 +21,9 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 //Get all topics
-Route::get('/topics',function(){
-    return Topic::all();
-
-});
-
+Route::get('/topics',[TopicApiController::class, 'index']);
 //create a topic
-Route::post('/topics',function(){
-    //validations
-    request()->validate([
-        'title'=>'required',
-        'content'=>'required',
-    ]);
-
-    //create topic
-    return Topic::create([
-        'title' => request('title'),
-        'content' => request('content')
-    ]);
-});
+Route::post('/topics',[TopicApiController::class, 'store']);
 
 //update a topic
 Route::put('/topics/{topic}',function(Topic $topic){
