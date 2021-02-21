@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9e9ca10-4365-4bac-9cc4-1706c9a6f7c7" name="Default Changelist" comment="fill controller&#10;topic update&#10;topic delete">
-      <change afterPath="$PROJECT_DIR$/holybeforumapi/app/Http/Controllers/TopicApiController.php" afterDir="false" />
+    <list default="true" id="b9e9ca10-4365-4bac-9cc4-1706c9a6f7c7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/holybeforumapi/app/Http/Controllers/CategoryApiController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/holybeforumapi/app/Http/Controllers/ReactionApiController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/holybeforumapi/app/Http/Controllers/UserApiController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/holybeforumapi/app/Http/Controllers/TopicApiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/holybeforumapi/app/Http/Controllers/TopicApiController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/holybeforumapi/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/holybeforumapi/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/holybeforumapi/database/migrations/2021_02_08_181841_create_topics_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/holybeforumapi/database/migrations/2021_02_08_181841_create_topics_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/holybeforumapi/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/holybeforumapi/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -168,13 +173,16 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1oCc3zTgFPWSFSg3gYp8fEYlM4L" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -328,14 +336,26 @@
       <updated>1612793817192</updated>
       <workItem from="1612793818335" duration="439000" />
       <workItem from="1612794381641" duration="7782000" />
-      <workItem from="1613075042539" duration="12663000" />
+      <workItem from="1613075042539" duration="16061000" />
+      <workItem from="1613846856915" duration="5379000" />
     </task>
+    <task id="LOCAL-00001" summary="fill controller&#10;topic update&#10;topic delete">
+      <created>1613814620226</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1613814620226</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="fill controller&#10;topic update&#10;topic delete" />
     <option name="LAST_COMMIT_MESSAGE" value="fill controller&#10;topic update&#10;topic delete" />
   </component>
@@ -344,14 +364,22 @@
       <screen x="1920" y="0" width="1739" height="978" />
     </state>
     <state x="2382" y="149" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1739.939/1920.0.1739.978@1920.0.1739.978" timestamp="1613075507870" />
+    <state x="2544" y="72" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1613898998339">
+      <screen x="1920" y="0" width="1739" height="978" />
+    </state>
+    <state x="2544" y="72" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1739.939/1920.0.1739.978@1920.0.1739.978" timestamp="1613898998339" />
+    <state x="2520" y="246" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1613898865534">
+      <screen x="1920" y="0" width="1739" height="978" />
+    </state>
+    <state x="2520" y="246" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1739.939/1920.0.1739.978@1920.0.1739.978" timestamp="1613898865534" />
     <state x="2584" y="490" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1612805743220">
       <screen x="1920" y="0" width="1739" height="978" />
     </state>
     <state x="2584" y="490" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1739.939/1920.0.1739.978@1920.0.1739.978" timestamp="1612805743220" />
-    <state x="2412" y="85" key="CommitChangelistDialog2" timestamp="1613814549888">
+    <state x="2412" y="85" key="CommitChangelistDialog2" timestamp="1613814619676">
       <screen x="1920" y="0" width="1739" height="978" />
     </state>
-    <state x="2412" y="85" key="CommitChangelistDialog2/0.0.1739.939/1920.0.1739.978@1920.0.1739.978" timestamp="1613814549888" />
+    <state x="2412" y="85" key="CommitChangelistDialog2/0.0.1739.939/1920.0.1739.978@1920.0.1739.978" timestamp="1613814619676" />
     <state x="2570" y="246" key="FileChooserDialogImpl" timestamp="1612794255860">
       <screen x="1920" y="0" width="1739" height="978" />
     </state>
@@ -380,10 +408,10 @@
       <screen x="1920" y="0" width="1739" height="978" />
     </state>
     <state x="2382" y="224" key="Vcs.Push.Dialog.v2/0.0.1739.939/1920.0.1739.978@1920.0.1739.978" timestamp="1613814404276" />
-    <state x="2486" y="315" key="com.intellij.ide.util.TipDialog" timestamp="1613075046680">
+    <state x="2486" y="315" key="com.intellij.ide.util.TipDialog" timestamp="1613846856553">
       <screen x="1920" y="0" width="1739" height="978" />
     </state>
-    <state x="2486" y="315" key="com.intellij.ide.util.TipDialog/0.0.1739.939/1920.0.1739.978@1920.0.1739.978" timestamp="1613075046680" />
+    <state x="2486" y="315" key="com.intellij.ide.util.TipDialog/0.0.1739.939/1920.0.1739.978@1920.0.1739.978" timestamp="1613846856553" />
     <state x="2113" y="141" width="614" height="804" key="find.popup" timestamp="1612808403784">
       <screen x="1920" y="0" width="1739" height="978" />
     </state>

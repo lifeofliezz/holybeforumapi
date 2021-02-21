@@ -29,6 +29,10 @@ class TopicApiController extends Controller
     //update a topic
     public function update(Topic $topic){
         //validations
+        $topic = Topic::find($topic);
+        if(is_null($topic)){
+            return response()->json('record not found!',404);
+        }
         request()->validate([
             'title'=>'required',
             'content'=>'required',
@@ -46,6 +50,10 @@ class TopicApiController extends Controller
 
     //delete a topic
     public function delete(Topic $topic){
+        $topic = Topic::find($topic);
+        if(is_null($topic)){
+            return response()->json('record not found!',404);
+        }
         $success = $topic->delete();
 
         return[

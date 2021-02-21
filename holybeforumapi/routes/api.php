@@ -3,6 +3,9 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TopicApiController;
+use App\Http\Controllers\ReactionApiController;
+use App\Http\Controllers\UserApiController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -14,11 +17,20 @@ use App\Http\Controllers\TopicApiController;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+//user routes
+//get user
+Route::middleware('auth:api')->get('/user', [UserApiController::class, 'index']);
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+//create user
+Route::post('/users',[UserApiController::class, 'store']);
 
+//update user
+Route::put('/users/{user}',[UserApiController::class, 'update']);
+
+//delete user
+Route::delete('/users/{user}',[UserApiController::class, 'delete']);
+
+//topicRoutes
 //Get all topics
 Route::get('/topics',[TopicApiController::class, 'index']);
 
@@ -30,3 +42,16 @@ Route::put('/topics/{topic}',[TopicApiController::class, 'update']);
 
 //delete a topic
 Route::delete('/topics/{topic}',[TopicApiController::class, 'delete']);
+
+//reaction routes
+//Get all reaction from topic
+Route::get('/reactions',[ReactionApiController::class, 'index']);
+
+//create a reaction
+Route::post('/reactions',[ReactionApiController::class, 'store']);
+
+//update a reaction
+Route::put('/reactions/{reaction}',[ReactionApiController::class, 'update']);
+
+//delete a reaction
+Route::delete('/reactions/{reaction}',[ReactionApiController::class, 'delete']);
