@@ -24,7 +24,6 @@ class CreateUsersTable extends Migration
             $table->text('profileText')->nullable();
             $table->string('status')->default("registered");
             $table->boolean('moderator')->default(0);
-            $table->rememberToken();
             $table->timestamps();
         });
     }

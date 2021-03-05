@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TopicApiController;
 use App\Http\Controllers\ReactionApiController;
 use App\Http\Controllers\UserApiController;
+use App\Http\Controllers\AuthController;
+
 
 
 /*
@@ -29,6 +31,12 @@ Route::put('/users/{user}',[UserApiController::class, 'update']);
 
 //delete user
 Route::delete('/users/{user}',[UserApiController::class, 'delete']);
+
+//login user
+Route::post('/users',[AuthController::class,'login']);
+
+//logout user
+Route::post('/users/{user}',[UserApiController::class, 'logout']);
 
 //topicRoutes
 //Get all topics
