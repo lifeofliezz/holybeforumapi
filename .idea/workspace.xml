@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9e9ca10-4365-4bac-9cc4-1706c9a6f7c7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/holybeforumapi/app/Http/Controllers/ForgotController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/holybeforumapi/app/Http/Requests/ForgotRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/holybeforumapi/app/Http/Requests/RegisterRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/holybeforumapi/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/holybeforumapi/app/Http/Controllers/AuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/holybeforumapi/app/Http/Controllers/UserApiController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/holybeforumapi/app/Http/Requests/RegisterRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/holybeforumapi/app/Http/Requests/RegisterRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/holybeforumapi/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/holybeforumapi/app/Models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/holybeforumapi/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/holybeforumapi/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -351,7 +351,7 @@
       <workItem from="1612794381641" duration="7782000" />
       <workItem from="1613075042539" duration="16061000" />
       <workItem from="1613846856915" duration="8980000" />
-      <workItem from="1614883260663" duration="15233000" />
+      <workItem from="1614883260663" duration="20129000" />
     </task>
     <task id="LOCAL-00001" summary="fill controller&#10;topic update&#10;topic delete">
       <created>1613814620226</created>
@@ -367,7 +367,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613902019344</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="forgot pw">
+      <created>1615023312989</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1615023312989</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -379,7 +386,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="fill controller&#10;topic update&#10;topic delete" />
     <MESSAGE value="add new migrations, controllers and models for user, topicreaction and category" />
-    <option name="LAST_COMMIT_MESSAGE" value="add new migrations, controllers and models for user, topicreaction and category" />
+    <MESSAGE value="forgot pw" />
+    <option name="LAST_COMMIT_MESSAGE" value="forgot pw" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2382" y="149" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1613075507870">
@@ -398,10 +406,10 @@
       <screen x="1920" y="0" width="1739" height="978" />
     </state>
     <state x="2584" y="490" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1739.939/1920.0.1739.978@1920.0.1739.978" timestamp="1612805743220" />
-    <state x="2412" y="85" key="CommitChangelistDialog2" timestamp="1613902018741">
+    <state x="2412" y="85" key="CommitChangelistDialog2" timestamp="1615023312384">
       <screen x="1920" y="0" width="1739" height="978" />
     </state>
-    <state x="2412" y="85" key="CommitChangelistDialog2/0.0.1739.939/1920.0.1739.978@1920.0.1739.978" timestamp="1613902018741" />
+    <state x="2412" y="85" key="CommitChangelistDialog2/0.0.1739.939/1920.0.1739.978@1920.0.1739.978" timestamp="1615023312384" />
     <state x="2570" y="246" key="FileChooserDialogImpl" timestamp="1612794255860">
       <screen x="1920" y="0" width="1739" height="978" />
     </state>

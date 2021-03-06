@@ -56,13 +56,10 @@ class AuthController extends Controller
 
             return $user;
 
-        }catch(\Exception $exception){
+        } catch (\Exception $exception) {
             return response([
-                'message'=> $exception->getMessage()
+                'message' => $exception->getMessage()
             ], 400);
         }
     }
-
-
-
 }

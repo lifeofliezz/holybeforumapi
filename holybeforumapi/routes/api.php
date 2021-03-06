@@ -21,17 +21,6 @@ use App\Http\Controllers\AuthController;
 |
 */
 //user routes
-//get user
-Route::middleware('auth:api')->get('/user', [UserApiController::class, 'index']);
-
-//create user
-Route::post('/users',[UserApiController::class, 'store']);
-
-//update user
-Route::put('/users/{user}',[UserApiController::class, 'update']);
-
-//delete user
-Route::delete('/users/{user}',[UserApiController::class, 'delete']);
 
 //login user
 Route::post('/users',[AuthController::class,'login']);
@@ -40,13 +29,12 @@ Route::post('/users',[AuthController::class,'login']);
 Route::get('/users',[AuthController::class, 'user'])->middleware('auth:api');
 
 //register user
-Route::post('/users',[AuthController::class, 'register']);
-
-//logout user
-Route::post('/users/{user}',[UserApiController::class, 'logout']);
+Route::post('/register',[AuthController::class, 'register']);
 
 //forgot password
-Route::post('users',[ForgotController::class, 'forgot']);
+Route::post('/forgot',[ForgotController::class,'forgot']);
+
+
 
 //topicRoutes
 //Get all topics
@@ -60,6 +48,8 @@ Route::put('/topics/{topic}',[TopicApiController::class, 'update']);
 
 //delete a topic
 Route::delete('/topics/{topic}',[TopicApiController::class, 'delete']);
+
+
 
 //reaction routes
 //Get all reaction from topic
