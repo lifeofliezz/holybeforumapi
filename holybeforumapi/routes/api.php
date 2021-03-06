@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ForgotController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TopicApiController;
@@ -35,8 +36,17 @@ Route::delete('/users/{user}',[UserApiController::class, 'delete']);
 //login user
 Route::post('/users',[AuthController::class,'login']);
 
+//get user
+Route::get('/users',[AuthController::class, 'user'])->middleware('auth:api');
+
+//register user
+Route::post('/users',[AuthController::class, 'register']);
+
 //logout user
 Route::post('/users/{user}',[UserApiController::class, 'logout']);
+
+//forgot password
+Route::post('users',[ForgotController::class, 'forgot']);
 
 //topicRoutes
 //Get all topics
