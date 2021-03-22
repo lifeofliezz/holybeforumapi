@@ -3,27 +3,37 @@
 namespace App\Http\Controllers;
 
 use App\Models\Topic;
+use Illuminate\Http\Request;
+
 
 class TopicApiController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware(['auth'])->only(['store', 'delete']);
+    }
+
     //return all topics
     public function index(){
-        return Topic::All();
+        return Topic::latest()->paginate(20);
     }
 
     //post topic
-    public function store(){
+    public function store(Request $request){
+
         //validations
-        request()->validate([
+        $this->validate($request,[
             'title'=>'required',
             'content'=>'required',
         ]);
 
         //create topic
-        return Topic::create([
-            'title' => request('title'),
-            'content' => request('content')
-        ]);
+
+        $success = $request->user()->topics()->create($request->only('title','content'));
+        return [
+            'success' => $success
+        ];
     }
 
     //update a topic

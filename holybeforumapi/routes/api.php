@@ -23,10 +23,12 @@ use App\Http\Controllers\AuthController;
 //user routes
 
 //login user
-Route::post('/users',[AuthController::class,'login']);
+Route::post('/login',[AuthController::class,'login']);
 
 //get user
-Route::get('/users',[AuthController::class, 'user'])->middleware('auth:api');
+Route::middleware('auth:api')->get('/user', function (Request $request) {
+    return $request->user();
+});
 
 //register user
 Route::post('/register',[AuthController::class, 'register']);
@@ -38,10 +40,10 @@ Route::post('/forgot',[ForgotController::class,'forgot']);
 
 //topicRoutes
 //Get all topics
-Route::get('/topics',[TopicApiController::class, 'index']);
+Route::get('/topics',[TopicApiController::class, 'index'])->middleware('auth:api');
 
 //create a topic
-Route::post('/topics',[TopicApiController::class, 'store']);
+Route::post('/createtopic',[TopicApiController::class, 'store'])->middleware('auth:api');
 
 //update a topic
 Route::put('/topics/{topic}',[TopicApiController::class, 'update']);

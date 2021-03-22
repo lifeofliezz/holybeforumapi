@@ -15,7 +15,7 @@ class AuthController extends Controller
     {
 
         try{
-        if (Auth::attempt($request->only('email', 'password'))) {
+        if (Auth::attempt($request->only('username', 'password'))) {
 
             $user = Auth::user();
             $token = $user->createToken('app')->accessToken;
@@ -49,7 +49,7 @@ class AuthController extends Controller
     {
         try {
             $user = User::create([
-                'name' => $request->input('name'),
+                'username' => $request->input('username'),
                 'email' => $request->input('email'),
                 'password' => Hash::make($request->input('password'))
             ]);

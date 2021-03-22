@@ -10,6 +10,12 @@ class Topic extends Model
     use HasFactory;
 
     protected $fillable = [
-        'title', 'content',
+        'title', 'content'
     ];
+
+    public function users()
+    {
+        return $this->hasOne(User::class);
+    }
+
 }
