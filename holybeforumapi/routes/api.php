@@ -5,7 +5,6 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TopicApiController;
 use App\Http\Controllers\ReactionApiController;
-use App\Http\Controllers\UserApiController;
 use App\Http\Controllers\AuthController;
 
 
@@ -27,8 +26,9 @@ Route::post('/login',[AuthController::class,'login']);
 
 //get user
 Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+    return $request->user();});
+
+Route::get('/currentuser',[AuthController::class, 'currentuser'])->middleware('auth:api');
 
 //register user
 Route::post('/register',[AuthController::class, 'register']);

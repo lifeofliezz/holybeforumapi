@@ -44,6 +44,14 @@ class AuthController extends Controller
         return Auth::user();
     }
 
+    //returns the currentuser
+    public function currentuser(){
+        return response([
+            Auth::user(),
+            'message' => 'success',
+        ]);
+    }
+
     //register a user
     public function register(Request $request)
     {
@@ -54,7 +62,10 @@ class AuthController extends Controller
                 'password' => Hash::make($request->input('password'))
             ]);
 
-            return $user;
+            //return $user;
+            return response([
+                'message' => 'success',
+            ]);
 
         } catch (\Exception $exception) {
             return response([

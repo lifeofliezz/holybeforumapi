@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9e9ca10-4365-4bac-9cc4-1706c9a6f7c7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/holybeforumapi/database/factories/TopicFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/94ae02c7-6f84-4b11-90b8-6e80f6130cb9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/94ae02c7-6f84-4b11-90b8-6e80f6130cb9.xml" afterDir="false" />
+    <list default="true" id="b9e9ca10-4365-4bac-9cc4-1706c9a6f7c7" name="Default Changelist" comment="forgot pw">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/holybeforumapi/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/holybeforumapi/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/holybeforumapi/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/holybeforumapi/app/Http/Controllers/AuthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/holybeforumapi/app/Http/Controllers/TopicApiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/holybeforumapi/app/Http/Controllers/TopicApiController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/holybeforumapi/app/Models/Topic.php" beforeDir="false" afterPath="$PROJECT_DIR$/holybeforumapi/app/Models/Topic.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/holybeforumapi/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/holybeforumapi/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/holybeforumapi/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/holybeforumapi/database/factories/UserFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/holybeforumapi/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/holybeforumapi/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/holybeforumapi/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/holybeforumapi/database/seeders/DatabaseSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/holybeforumapi/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/holybeforumapi/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/holybeforumapi/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/holybeforumapi/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,13 +45,6 @@
         <item name="holybeforumapi@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="holybeforumapi: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="holybeforumapi@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="holybeforumapi: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-        <item name="password_resets: table" type="dbc44a63:MariaImplModel$Table" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
@@ -209,18 +196,20 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../holybeforum02" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
@@ -356,6 +345,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -372,6 +362,13 @@
       <workItem from="1613846856915" duration="8980000" />
       <workItem from="1614883260663" duration="32244000" />
       <workItem from="1615348068562" duration="12715000" />
+      <workItem from="1616441469836" duration="1751000" />
+      <workItem from="1618048174195" duration="1984000" />
+      <workItem from="1618644505309" duration="9000" />
+      <workItem from="1618644516504" duration="573000" />
+      <workItem from="1618646050933" duration="162000" />
+      <workItem from="1618747211460" duration="3594000" />
+      <workItem from="1619860410266" duration="4101000" />
     </task>
     <task id="LOCAL-00001" summary="fill controller&#10;topic update&#10;topic delete">
       <created>1613814620226</created>
@@ -417,80 +414,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="forgot pw" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2382" y="149" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1613075507870">
-      <screen x="1920" y="0" width="1739" height="978" />
-    </state>
-    <state x="2382" y="149" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1739.939/1920.0.1739.978@1920.0.1739.978" timestamp="1613075507870" />
-    <state x="2544" y="72" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1613898998339">
-      <screen x="1920" y="0" width="1739" height="978" />
-    </state>
-    <state x="2544" y="72" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1739.939/1920.0.1739.978@1920.0.1739.978" timestamp="1613898998339" />
-    <state x="600" y="236" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1615378792475">
+    <state x="566" y="294" key="com.intellij.ide.util.TipDialog" timestamp="1620587798394">
       <screen x="0" y="0" width="1739" height="939" />
     </state>
-    <state x="600" y="236" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1739.939/1920.0.1739.978@0.0.1739.939" timestamp="1615378792475" />
-    <state x="2520" y="246" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1739.939/1920.0.1739.978@1920.0.1739.978" timestamp="1614884411676" />
-    <state x="2584" y="490" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1612805743220">
-      <screen x="1920" y="0" width="1739" height="978" />
-    </state>
-    <state x="2584" y="490" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1739.939/1920.0.1739.978@1920.0.1739.978" timestamp="1612805743220" />
-    <state x="2412" y="85" key="CommitChangelistDialog2" timestamp="1615035289650">
-      <screen x="1920" y="0" width="1739" height="978" />
-    </state>
-    <state x="2412" y="85" key="CommitChangelistDialog2/0.0.1739.939/1920.0.1739.978@1920.0.1739.978" timestamp="1615035289650" />
-    <state x="2570" y="246" key="FileChooserDialogImpl" timestamp="1615314104872">
-      <screen x="1920" y="0" width="1739" height="978" />
-    </state>
-    <state x="2570" y="246" key="FileChooserDialogImpl/0.0.1739.939/1920.0.1739.978@1920.0.1739.978" timestamp="1615314104872" />
-    <state width="1696" height="262" key="GridCell.Tab.0.bottom" timestamp="1613811637371">
-      <screen x="1920" y="0" width="1739" height="978" />
-    </state>
-    <state width="1696" height="262" key="GridCell.Tab.0.bottom/0.0.1739.939/1920.0.1739.978@1920.0.1739.978" timestamp="1613811637371" />
-    <state width="1696" height="262" key="GridCell.Tab.0.center" timestamp="1613811637371">
-      <screen x="1920" y="0" width="1739" height="978" />
-    </state>
-    <state width="1696" height="262" key="GridCell.Tab.0.center/0.0.1739.939/1920.0.1739.978@1920.0.1739.978" timestamp="1613811637371" />
-    <state width="1696" height="262" key="GridCell.Tab.0.left" timestamp="1613811637370">
-      <screen x="1920" y="0" width="1739" height="978" />
-    </state>
-    <state width="1696" height="262" key="GridCell.Tab.0.left/0.0.1739.939/1920.0.1739.978@1920.0.1739.978" timestamp="1613811637370" />
-    <state width="1696" height="262" key="GridCell.Tab.0.right" timestamp="1613811637371">
-      <screen x="1920" y="0" width="1739" height="978" />
-    </state>
-    <state width="1696" height="262" key="GridCell.Tab.0.right/0.0.1739.939/1920.0.1739.978@1920.0.1739.978" timestamp="1613811637371" />
-    <state x="2535" y="305" key="NewPhpClassDialog" timestamp="1612804887786">
-      <screen x="1920" y="0" width="1739" height="978" />
-    </state>
-    <state x="2535" y="305" key="NewPhpClassDialog/0.0.1739.939/1920.0.1739.978@1920.0.1739.978" timestamp="1612804887786" />
-    <state x="2299" y="133" key="SettingsEditor" timestamp="1614975338168">
-      <screen x="1920" y="0" width="1739" height="978" />
-    </state>
-    <state x="2299" y="133" key="SettingsEditor/0.0.1739.939/1920.0.1739.978@1920.0.1739.978" timestamp="1614975338168" />
-    <state x="2382" y="224" key="Vcs.Push.Dialog.v2" timestamp="1613902028711">
-      <screen x="1920" y="0" width="1739" height="978" />
-    </state>
-    <state x="2382" y="224" key="Vcs.Push.Dialog.v2/0.0.1739.939/1920.0.1739.978@1920.0.1739.978" timestamp="1613902028711" />
-    <state x="666" y="303" width="406" height="322" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1615349208216">
-      <screen x="0" y="0" width="1739" height="939" />
-    </state>
-    <state x="666" y="303" width="406" height="322" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1739.939/1920.0.1739.978@0.0.1739.939" timestamp="1615349208216" />
-    <state x="2586" y="316" width="406" height="339" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1739.939/1920.0.1739.978@1920.0.1739.978" timestamp="1615292271392" />
-    <state x="566" y="302" key="com.intellij.ide.util.TipDialog" timestamp="1616441470709">
-      <screen x="0" y="0" width="1739" height="939" />
-    </state>
-    <state x="566" y="302" key="com.intellij.ide.util.TipDialog/0.0.1739.939/1920.0.1739.978@0.0.1739.939" timestamp="1616441470709" />
-    <state x="2486" y="315" key="com.intellij.ide.util.TipDialog/0.0.1739.939/1920.0.1739.978@1920.0.1739.978" timestamp="1614883263755" />
-    <state x="2113" y="141" width="614" height="804" key="find.popup" timestamp="1612808403784">
-      <screen x="1920" y="0" width="1739" height="978" />
-    </state>
-    <state x="2113" y="141" width="614" height="804" key="find.popup/0.0.1739.939/1920.0.1739.978@1920.0.1739.978" timestamp="1612808403784" />
-    <state x="2606" y="336" key="git4idea.ui.GitTagDialog" timestamp="1613812845609">
-      <screen x="1920" y="0" width="1739" height="978" />
-    </state>
-    <state x="2606" y="336" key="git4idea.ui.GitTagDialog/0.0.1739.939/1920.0.1739.978@1920.0.1739.978" timestamp="1613812845609" />
-    <state x="2452" y="210" width="672" height="678" key="search.everywhere.popup" timestamp="1613811913987">
-      <screen x="1920" y="0" width="1739" height="978" />
-    </state>
-    <state x="2452" y="210" width="672" height="678" key="search.everywhere.popup/0.0.1739.939/1920.0.1739.978@1920.0.1739.978" timestamp="1613811913987" />
+    <state x="566" y="294" key="com.intellij.ide.util.TipDialog/0.0.1739.939/1920.0.1739.939@0.0.1739.939" timestamp="1620587798394" />
   </component>
 </project>
