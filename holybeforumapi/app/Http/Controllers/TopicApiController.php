@@ -16,7 +16,10 @@ class TopicApiController extends Controller
 
     //return all topics
     public function index(){
-        return Topic::latest()->paginate(20);
+        return Topic::latest()
+            ->join('users', 'user_id', '=', 'users.id')
+            ->select('topics.title', 'topics.content', 'topics.created_at', 'topics.updated_at', 'users.username', 'users.profilePicture', 'users.moderator', 'users.status')
+            ->paginate(20);
     }
 
     //post topic
