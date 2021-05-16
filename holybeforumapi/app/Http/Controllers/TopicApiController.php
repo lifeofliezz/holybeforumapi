@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Topic;
 use Illuminate\Http\Request;
-use Illuminate\Http\JsonResponse;
+
 
 
 class TopicApiController extends Controller
@@ -25,11 +25,11 @@ class TopicApiController extends Controller
 
 //    return one topic
     public function oneTopic($id){
-        $topic = Topic::where('id', $id)
-            ->take(1)
+        return Topic::where('topics.id', $id)
+            ->join('users', 'user_id', '=', 'users.id')
+            ->select('topics.title', 'topics.content', 'topics.created_at', 'topics.updated_at', 'users.username', 'users.profilePicture', 'users.moderator', 'users.status')
             ->get();
-        return $topic;
-    }
+ }
 
 
     //post topic
