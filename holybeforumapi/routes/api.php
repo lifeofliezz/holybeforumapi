@@ -42,6 +42,9 @@ Route::post('/forgot',[ForgotController::class,'forgot']);
 //Get all topics
 Route::get('/topics',[TopicApiController::class, 'index'])->middleware('auth:api');
 
+//get topic by id
+Route::get('/topics/{topic}',[TopicApiController::class, 'oneTopic'])->middleware('auth:api');
+
 //create a topic
 Route::post('/createtopic',[TopicApiController::class, 'store'])->middleware('auth:api');
 
