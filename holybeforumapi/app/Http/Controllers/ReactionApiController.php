@@ -2,28 +2,38 @@
 
 namespace App\Http\Controllers;
 
+
 use App\Models\TopicReaction;
 use Illuminate\Http\Request;
 
 class ReactionApiController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware(['auth'])->only(['store', 'delete']);
+    }
+
     //return all topics
-    public function index(){
-        return TopicReaction::All();
+    public function index(Request $request){
+        return TopicReaction::where('topic_reactions.topic_id', $request)
+            ->join('users', 'user_id', '=', 'users.id')
+            ->select('topic_reactions.content', 'topic_reactions.created_at', 'topic_reactions.updated_at', 'users.username', 'users.profilePicture', 'users.moderator', 'users.status')
+            ->paginate(20);
     }
 
     //post topic
-    public function store(Topic $topic){
+    public function store(Request $request){
         //validations
-        request()->validate([
+        $this->validate($request,[
             'content'=>'required',
         ]);
 
         //create topic
-        return TopicReaction::create([
-            'content' => request('content')
 
-        ]);
+        $success = $request->user()->topicreactions()->create($request->only('content'));
+        return [
+            'success' => $success
+        ];
     }
 
     //update a topic

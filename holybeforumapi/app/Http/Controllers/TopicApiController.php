@@ -23,11 +23,12 @@ class TopicApiController extends Controller
             ->paginate(20);
     }
 
-//    return one topic
-    public function oneTopic($id){
-        return Topic::where('topics.id', $id)
-            ->join('users', 'user_id', '=', 'users.id')
-            ->select('topics.title', 'topics.content', 'topics.created_at', 'topics.updated_at', 'users.username', 'users.profilePicture', 'users.moderator', 'users.status')
+//    return one topic with userinfo
+    public function show($id){
+        return Topic::find($id)
+            ->rightjoin('users', 'user_id', '=', 'users.id')
+            ->select('topics.id','topics.title', 'topics.content', 'topics.created_at', 'topics.updated_at', 'users.username', 'users.profilePicture', 'users.moderator', 'users.status')
+            ->where('topics.id','=',$id)
             ->get();
  }
 

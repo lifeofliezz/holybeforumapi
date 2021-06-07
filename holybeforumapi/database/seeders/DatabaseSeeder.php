@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Topic;
+use App\Models\TopicReaction;
 use App\Models\User;
 use Illuminate\Database\Seeder;
 
@@ -17,6 +18,11 @@ class DatabaseSeeder extends Seeder
     {
         Topic::factory()
             ->count(10)
+            ->create();
+
+
+        Topicreaction::factory()
+            ->count(40)
             ->create();
     }
 }

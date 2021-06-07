@@ -43,7 +43,7 @@ Route::post('/forgot',[ForgotController::class,'forgot']);
 Route::get('/topics',[TopicApiController::class, 'index'])->middleware('auth:api');
 
 //get topic by id
-Route::get('/topics/{topic}',[TopicApiController::class, 'oneTopic'])->middleware('auth:api');
+Route::get('/topics/{id}',[TopicApiController::class, 'show'])->middleware('auth:api');
 
 //create a topic
 Route::post('/createtopic',[TopicApiController::class, 'store'])->middleware('auth:api');
@@ -58,7 +58,7 @@ Route::delete('/topics/{topic}',[TopicApiController::class, 'delete']);
 
 //reaction routes
 //Get all reaction from topic
-Route::get('/reactions',[ReactionApiController::class, 'index']);
+Route::get('/reactions/{Request}',[ReactionApiController::class, 'index']);
 
 //create a reaction
 Route::post('/reactions',[ReactionApiController::class, 'store']);

@@ -13,7 +13,7 @@ class CreateTopicreactionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('topicreactions', function (Blueprint $table) {
+        Schema::create('topic_reactions', function (Blueprint $table) {
             $table->id();
             $table->text('content');
             $table->timestamps();
@@ -35,6 +35,6 @@ class CreateTopicreactionsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('topicreactions');
+        Schema::dropIfExists('topic_reactions');
     }
 }
