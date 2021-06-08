@@ -43,16 +43,16 @@ Route::post('/register',[AuthController::class, 'register']);
 Route::get('/topics',[TopicApiController::class, 'index'])->middleware('auth:api');
 
 //get topic by id
-Route::get('/topics/{id}',[TopicApiController::class, 'show'])->middleware('auth:api');
+Route::get('/topic/{id}',[TopicApiController::class, 'show'])->middleware('auth:api');
 
 //create a topic
 Route::post('/createtopic',[TopicApiController::class, 'store'])->middleware('auth:api');
 
 //update a topic
-Route::put('/updatetopics/{topic}',[TopicApiController::class, 'update'])->middleware('auth:api');
+Route::put('/updatetopic/{topic}',[TopicApiController::class, 'update'])->middleware('auth:api');
 
 //delete a topic
-Route::delete('/topics/{topic}',[TopicApiController::class, 'delete'])->middleware('auth:api');
+Route::delete('/deletetopic/{topic}',[TopicApiController::class, 'delete'])->middleware('auth:api');
 
 
 
@@ -64,10 +64,10 @@ Route::get('/reactions/{Request}',[ReactionApiController::class, 'index'])->midd
 Route::post('/createreaction',[ReactionApiController::class, 'store'])->middleware('auth:api');
 
 //update a reaction
-Route::put('/reactions/{topicreaction}',[ReactionApiController::class, 'update'])->middleware('auth:api');
+Route::put('/updatereaction/{topicreaction}',[ReactionApiController::class, 'update'])->middleware('auth:api');
 
 //delete a reaction
-Route::delete('/reactions/{reaction}',[ReactionApiController::class, 'delete'])->middleware('auth:api');
+Route::delete('/deletereactions/{topicreaction}',[ReactionApiController::class, 'delete'])->middleware('auth:api');
 
 //search
 Route::get('/searchreactions/{term}',[ReactionApiController::class, 'search'])->middleware('auth:api');
