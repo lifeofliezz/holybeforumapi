@@ -32,5 +32,21 @@ class TopicReaction extends Model
 
     protected $fillable = [
         'content',
+        'topic_id',
     ];
+
+    public function users()
+    {
+        return $this->hasOne(User::class);
+    }
+
+    public function scopeSearch($query, $term)
+    {
+        return $query->where('content', 'like', "%{$term}%");
+    }
+
+    public function topic()
+    {
+        return $this->belongsTo(Topic::class);
+    }
 }

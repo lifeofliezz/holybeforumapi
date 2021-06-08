@@ -16,4 +16,10 @@ use Illuminate\Database\Eloquent\Model;
 class topicCategory extends Model
 {
     use HasFactory;
+
+//    public function topic()
+//    {
+//        return $this->belongsTo(Topic::class);
+//    }
+
 }

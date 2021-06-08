@@ -78,4 +78,10 @@ class User extends Authenticatable
     {
         return $this->hasMany(Topic::class);
     }
+
+    public function topic_reactions()
+    {
+        return $this->hasMany(TopicReaction::class);
+    }
+
 }

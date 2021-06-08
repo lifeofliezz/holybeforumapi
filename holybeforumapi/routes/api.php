@@ -33,8 +33,8 @@ Route::get('/currentuser',[AuthController::class, 'currentuser'])->middleware('a
 //register user
 Route::post('/register',[AuthController::class, 'register']);
 
-//forgot password
-Route::post('/forgot',[ForgotController::class,'forgot']);
+////forgot password
+//Route::post('/forgot',[ForgotController::class,'forgot']);
 
 
 
@@ -49,22 +49,27 @@ Route::get('/topics/{id}',[TopicApiController::class, 'show'])->middleware('auth
 Route::post('/createtopic',[TopicApiController::class, 'store'])->middleware('auth:api');
 
 //update a topic
-Route::put('/topics/{topic}',[TopicApiController::class, 'update']);
+Route::put('/updatetopics/{topic}',[TopicApiController::class, 'update'])->middleware('auth:api');
 
 //delete a topic
-Route::delete('/topics/{topic}',[TopicApiController::class, 'delete']);
+Route::delete('/topics/{topic}',[TopicApiController::class, 'delete'])->middleware('auth:api');
 
 
 
 //reaction routes
 //Get all reaction from topic
-Route::get('/reactions/{Request}',[ReactionApiController::class, 'index']);
+Route::get('/reactions/{Request}',[ReactionApiController::class, 'index'])->middleware('auth:api');
 
 //create a reaction
-Route::post('/reactions',[ReactionApiController::class, 'store']);
+Route::post('/createreaction',[ReactionApiController::class, 'store'])->middleware('auth:api');
 
 //update a reaction
-Route::put('/reactions/{reaction}',[ReactionApiController::class, 'update']);
+Route::put('/reactions/{topicreaction}',[ReactionApiController::class, 'update'])->middleware('auth:api');
 
 //delete a reaction
-Route::delete('/reactions/{reaction}',[ReactionApiController::class, 'delete']);
+Route::delete('/reactions/{reaction}',[ReactionApiController::class, 'delete'])->middleware('auth:api');
+
+//search
+Route::get('/searchreactions/{term}',[ReactionApiController::class, 'search'])->middleware('auth:api');
+Route::get('/searchtopics/{term}',[TopicApiController::class, 'search'])->middleware('auth:api');
+

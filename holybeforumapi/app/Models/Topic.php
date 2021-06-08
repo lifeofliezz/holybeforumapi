@@ -42,9 +42,19 @@ class Topic extends Model
         return $this->hasOne(User::class);
     }
 
-    public function topicreactions()
+//    public function topicCategories(){
+//        return $this->hasMany(topicCategory::class);
+//    }
+
+    public function topic_reactions()
     {
         return $this->hasMany(TopicReaction::class);
+    }
+
+    public function scopeSearch($query, $term)
+    {
+        return $query->where('title', 'like', "%{$term}%")
+            ->orWhere('content', 'like', "%{$term}%");
     }
 
 }

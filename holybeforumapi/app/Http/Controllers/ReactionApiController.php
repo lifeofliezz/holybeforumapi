@@ -13,52 +13,52 @@ class ReactionApiController extends Controller
         $this->middleware(['auth'])->only(['store', 'delete']);
     }
 
-    //return all topics
-    public function index(Request $request){
-        return TopicReaction::where('topic_reactions.topic_id', $request)
+    //return all reactions with topicid
+    public function index($id){
+        return TopicReaction::find($id)
             ->join('users', 'user_id', '=', 'users.id')
             ->select('topic_reactions.content', 'topic_reactions.created_at', 'topic_reactions.updated_at', 'users.username', 'users.profilePicture', 'users.moderator', 'users.status')
-            ->paginate(20);
+            ->where('topic_reactions.topic_id','=',$id)
+            ->get();
     }
 
-    //post topic
+    //post reaction
     public function store(Request $request){
         //validations
         $this->validate($request,[
             'content'=>'required',
         ]);
 
-        //create topic
+        //create reaction
 
-        $success = $request->user()->topicreactions()->create($request->only('content'));
+        $success = $request->user()->topic_reactions()->create($request->only('content', 'topic_id'));
         return [
             'success' => $success
         ];
     }
 
-    //update a topic
-    public function update(TopicReaction $reaction){
-        //validations
-        request()->validate([
-            'content'=>'required',
-        ]);
-        //update topic
-        $success = $reaction->update([
-            'content' => request('content')
-        ]);
+    //update a reaction
+    public function update(Request $request, TopicReaction $topicreaction){
+        $topicreaction->update($request->all());
 
-        return [
-            'success' => $success
-        ];
+        return response() ->json($topicreaction, 200);
     }
 
-    //delete a topic
+    //delete a reaction
     public function delete(TopicReaction $reaction){
         $success = $reaction->delete();
 
         return[
             'success' => $success
         ];
+    }
+
+    //search topics and reactions
+    public function search($term){
+        return TopicReaction::search($term)
+            ->join('users', 'user_id', '=', 'users.id')
+            ->select('topic_reactions.content', 'topic_reactions.created_at', 'topic_reactions.updated_at', 'users.username', 'users.profilePicture', 'users.moderator', 'users.status')
+            ->get();
     }
 
 }
