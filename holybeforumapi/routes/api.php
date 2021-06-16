@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TopicApiController;
 use App\Http\Controllers\ReactionApiController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\UserController;
 
 
 
@@ -24,9 +25,9 @@ use App\Http\Controllers\AuthController;
 //login user
 Route::post('/login',[AuthController::class,'login']);
 
-//get user
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();});
+////get user
+//Route::middleware('auth:api')->get('/user', function (Request $request) {
+//    return $request->user();});
 
 Route::get('/currentuser',[AuthController::class, 'currentuser'])->middleware('auth:api');
 
@@ -36,6 +37,17 @@ Route::post('/register',[AuthController::class, 'register']);
 ////forgot password
 //Route::post('/forgot',[ForgotController::class,'forgot']);
 
+//Get all users
+Route::get('/users',[UserController::class, 'index'])->middleware('auth:api');
+
+//get topic by id
+Route::get('/user/{id}',[userController::class, 'show'])->middleware('auth:api');
+
+//update a user
+Route::put('/updateuser/{user}',[UserController::class, 'update'])->middleware('auth:api');
+
+//delete a topic
+Route::delete('/deleteuser/{user}',[UserController::class, 'delete'])->middleware('auth:api');
 
 
 //topicRoutes

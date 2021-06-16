@@ -6,6 +6,18 @@ Content-Type: application/json
 "content": "content via de api"
 }
 
+<> 2021-06-07T051628.404.html
+
+###
+
+POST http://localhost:81/holybeforumapi/holybeforumapi/public/api/topic
+Content-Type: application/json
+
+{
+"title": "titel",
+"content": "content via de api"
+}
+
 <> 2021-02-13T021247.500.html
 
 ###

@@ -19,7 +19,7 @@ class TopicApiController extends Controller
     public function index(){
         return Topic::latest()
             ->join('users', 'user_id', '=', 'users.id')
-            ->select('topics.title', 'topics.content', 'topics.created_at', 'topics.updated_at', 'users.username', 'users.profilePicture', 'users.moderator', 'users.status')
+            ->select('topics.id', 'topics.title', 'topics.content', 'topics.created_at', 'topics.updated_at', 'users.username', 'users.profilePicture', 'users.moderator', 'users.status')
             ->paginate(20);
     }
 

@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9e9ca10-4365-4bac-9cc4-1706c9a6f7c7" name="Default Changelist" comment="forgot pw">
+      <change afterPath="$PROJECT_DIR$/holybeforumapi/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/94ae02c7-6f84-4b11-90b8-6e80f6130cb9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/94ae02c7-6f84-4b11-90b8-6e80f6130cb9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/holybeforumapi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/holybeforumapi.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/holybeforumapi/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/holybeforumapi/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/holybeforumapi/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/holybeforumapi/app/Http/Controllers/AuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/holybeforumapi/app/Http/Controllers/TopicApiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/holybeforumapi/app/Http/Controllers/TopicApiController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/holybeforumapi/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/holybeforumapi/app/Models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/holybeforumapi/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/holybeforumapi/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/holybeforumapi/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/holybeforumapi/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,13 +50,6 @@
         <item name="holybeforumapi@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="holybeforumapi: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="holybeforumapi@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="holybeforumapi: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-        <item name="topics: table" type="dbc44a63:MariaImplModel$Table" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
@@ -188,6 +186,17 @@
       <path value="$PROJECT_DIR$/holybeforumapi/vendor/phpseclib/phpseclib" />
       <path value="$PROJECT_DIR$/holybeforumapi/vendor/symfony/psr-http-message-bridge" />
       <path value="$PROJECT_DIR$/holybeforumapi/vendor/laravel/passport" />
+      <path value="$PROJECT_DIR$/holybeforumapi/vendor/react/promise" />
+      <path value="$PROJECT_DIR$/holybeforumapi/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/holybeforumapi/vendor/doctrine/deprecations" />
+      <path value="$PROJECT_DIR$/holybeforumapi/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/holybeforumapi/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/holybeforumapi/vendor/seld/phar-utils" />
+      <path value="$PROJECT_DIR$/holybeforumapi/vendor/seld/jsonlint" />
+      <path value="$PROJECT_DIR$/holybeforumapi/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/holybeforumapi/vendor/barryvdh/reflection-docblock" />
+      <path value="$PROJECT_DIR$/holybeforumapi/vendor/barryvdh/laravel-ide-helper" />
+      <path value="$PROJECT_DIR$/holybeforumapi/vendor/justinrainbow/json-schema" />
     </include_path>
   </component>
   <component name="ProjectId" id="1oCc3zTgFPWSFSg3gYp8fEYlM4L" />
@@ -209,6 +218,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2019.3.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RestClientSettings">
@@ -369,6 +379,10 @@
       <workItem from="1618646050933" duration="162000" />
       <workItem from="1618747211460" duration="3594000" />
       <workItem from="1619860410266" duration="4101000" />
+      <workItem from="1620587797411" duration="3344000" />
+      <workItem from="1620985776048" duration="13878000" />
+      <workItem from="1622892139118" duration="29126000" />
+      <workItem from="1623243480011" duration="7109000" />
     </task>
     <task id="LOCAL-00001" summary="fill controller&#10;topic update&#10;topic delete">
       <created>1613814620226</created>
@@ -414,9 +428,40 @@
     <option name="LAST_COMMIT_MESSAGE" value="forgot pw" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="566" y="294" key="com.intellij.ide.util.TipDialog" timestamp="1620587798394">
-      <screen x="0" y="0" width="1739" height="939" />
+    <state x="2520" y="225" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1623176246038">
+      <screen x="1920" y="0" width="1739" height="939" />
     </state>
-    <state x="566" y="294" key="com.intellij.ide.util.TipDialog/0.0.1739.939/1920.0.1739.939@0.0.1739.939" timestamp="1620587798394" />
+    <state x="600" y="225" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1739.939/1920.0.1739.939@0.0.1739.939" timestamp="1623049103532" />
+    <state x="2520" y="225" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1739.939/1920.0.1739.939@1920.0.1739.939" timestamp="1623176246038" />
+    <state width="1696" height="249" key="GridCell.Tab.0.bottom" timestamp="1623225315718">
+      <screen x="1920" y="0" width="1739" height="939" />
+    </state>
+    <state width="1696" height="249" key="GridCell.Tab.0.bottom/0.0.1739.939/1920.0.1739.939@1920.0.1739.939" timestamp="1623225315718" />
+    <state width="1696" height="249" key="GridCell.Tab.0.center" timestamp="1623225315718">
+      <screen x="1920" y="0" width="1739" height="939" />
+    </state>
+    <state width="1696" height="249" key="GridCell.Tab.0.center/0.0.1739.939/1920.0.1739.939@1920.0.1739.939" timestamp="1623225315718" />
+    <state width="1696" height="249" key="GridCell.Tab.0.left" timestamp="1623225315718">
+      <screen x="1920" y="0" width="1739" height="939" />
+    </state>
+    <state width="1696" height="249" key="GridCell.Tab.0.left/0.0.1739.939/1920.0.1739.939@1920.0.1739.939" timestamp="1623225315718" />
+    <state width="1696" height="249" key="GridCell.Tab.0.right" timestamp="1623225315718">
+      <screen x="1920" y="0" width="1739" height="939" />
+    </state>
+    <state width="1696" height="249" key="GridCell.Tab.0.right/0.0.1739.939/1920.0.1739.939@1920.0.1739.939" timestamp="1623225315718" />
+    <state x="2505" y="285" key="NewPhpClassDialog" timestamp="1623852055217">
+      <screen x="1920" y="0" width="1739" height="939" />
+    </state>
+    <state x="2505" y="285" key="NewPhpClassDialog/0.0.1739.939/1920.0.1739.939@1920.0.1739.939" timestamp="1623852055217" />
+    <state x="2486" y="294" key="com.intellij.ide.util.TipDialog" timestamp="1623243481080">
+      <screen x="1920" y="0" width="1739" height="939" />
+    </state>
+    <state x="566" y="294" key="com.intellij.ide.util.TipDialog/0.0.1739.939/1920.0.1739.939@0.0.1739.939" timestamp="1622892203003" />
+    <state x="2486" y="294" key="com.intellij.ide.util.TipDialog/0.0.1739.939/1920.0.1739.939@1920.0.1739.939" timestamp="1623243481080" />
+    <state x="2483" y="202" width="1076" height="649" key="find.popup" timestamp="1623079849960">
+      <screen x="1920" y="0" width="1739" height="939" />
+    </state>
+    <state x="563" y="202" width="1076" height="649" key="find.popup/0.0.1739.939/1920.0.1739.939@0.0.1739.939" timestamp="1623053497543" />
+    <state x="2483" y="202" width="1076" height="649" key="find.popup/0.0.1739.939/1920.0.1739.939@1920.0.1739.939" timestamp="1623079849960" />
   </component>
 </project>

@@ -39,15 +39,15 @@ class AuthController extends Controller
         ], 401);
     }
 
-    //returns a user with token
-    public function user(){
-        return Auth::user();
-    }
+//    //returns a user with token
+//    public function user(){
+//        return Auth::user();
+//    }
 
     //returns the currentuser
     public function currentuser(){
         return response([
-            Auth::user(),
+            'user' => Auth::user(),
             'message' => 'success',
         ]);
     }

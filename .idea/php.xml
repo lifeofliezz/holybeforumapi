@@ -122,6 +122,17 @@
       <path value="$PROJECT_DIR$/holybeforumapi/vendor/phpseclib/phpseclib" />
       <path value="$PROJECT_DIR$/holybeforumapi/vendor/symfony/psr-http-message-bridge" />
       <path value="$PROJECT_DIR$/holybeforumapi/vendor/laravel/passport" />
+      <path value="$PROJECT_DIR$/holybeforumapi/vendor/react/promise" />
+      <path value="$PROJECT_DIR$/holybeforumapi/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/holybeforumapi/vendor/doctrine/deprecations" />
+      <path value="$PROJECT_DIR$/holybeforumapi/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/holybeforumapi/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/holybeforumapi/vendor/seld/phar-utils" />
+      <path value="$PROJECT_DIR$/holybeforumapi/vendor/seld/jsonlint" />
+      <path value="$PROJECT_DIR$/holybeforumapi/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/holybeforumapi/vendor/barryvdh/reflection-docblock" />
+      <path value="$PROJECT_DIR$/holybeforumapi/vendor/barryvdh/laravel-ide-helper" />
+      <path value="$PROJECT_DIR$/holybeforumapi/vendor/justinrainbow/json-schema" />
     </include_path>
   </component>
   <component name="PhpUnit">
