@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Topic;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Input;
 
 
@@ -52,9 +53,14 @@ class TopicApiController extends Controller
 
     //update a topic
     public function update(Request $request, Topic $topic){
-        $topic->update($request->all());
+        if(Auth::id() === $topic->user_id){
+            $topic->update($request->all());
+            return response() ->json($topic, 200);
+        }
+        else{
+            return response()->json(null, 401);
+        }
 
-        return response() ->json($topic, 200);
     }
 
     //delete a topic

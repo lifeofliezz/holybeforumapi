@@ -162,6 +162,7 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+        Vyuldashev\LaravelOpenApi\OpenApiServiceProvider::class, //api to postman
 
         /*
          * Package Service Providers...

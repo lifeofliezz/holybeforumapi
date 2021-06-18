@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9e9ca10-4365-4bac-9cc4-1706c9a6f7c7" name="Default Changelist" comment="forgot pw">
-      <change afterPath="$PROJECT_DIR$/holybeforumapi/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/94ae02c7-6f84-4b11-90b8-6e80f6130cb9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/94ae02c7-6f84-4b11-90b8-6e80f6130cb9.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/holybeforumapi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/holybeforumapi.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/holybeforumapi/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/holybeforumapi/app/Http/Controllers/AuthController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/holybeforumapi/app/Http/Controllers/TopicApiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/holybeforumapi/app/Http/Controllers/TopicApiController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/holybeforumapi/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/holybeforumapi/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/holybeforumapi/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/holybeforumapi/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/holybeforumapi/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/holybeforumapi/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/holybeforumapi/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/holybeforumapi/config/app.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/holybeforumapi/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/holybeforumapi/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,6 +49,13 @@
         <item name="holybeforumapi@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="holybeforumapi: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="holybeforumapi@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="holybeforumapi: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="topics: table" type="dbc44a63:MariaImplModel$Table" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
@@ -197,6 +203,8 @@
       <path value="$PROJECT_DIR$/holybeforumapi/vendor/barryvdh/reflection-docblock" />
       <path value="$PROJECT_DIR$/holybeforumapi/vendor/barryvdh/laravel-ide-helper" />
       <path value="$PROJECT_DIR$/holybeforumapi/vendor/justinrainbow/json-schema" />
+      <path value="$PROJECT_DIR$/holybeforumapi/vendor/vyuldashev/laravel-openapi" />
+      <path value="$PROJECT_DIR$/holybeforumapi/vendor/goldspecdigital/oooas" />
     </include_path>
   </component>
   <component name="ProjectId" id="1oCc3zTgFPWSFSg3gYp8fEYlM4L" />
@@ -382,7 +390,7 @@
       <workItem from="1620587797411" duration="3344000" />
       <workItem from="1620985776048" duration="13878000" />
       <workItem from="1622892139118" duration="29126000" />
-      <workItem from="1623243480011" duration="7109000" />
+      <workItem from="1623243480011" duration="13027000" />
     </task>
     <task id="LOCAL-00001" summary="fill controller&#10;topic update&#10;topic delete">
       <created>1613814620226</created>

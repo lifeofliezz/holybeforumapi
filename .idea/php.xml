@@ -133,6 +133,8 @@
       <path value="$PROJECT_DIR$/holybeforumapi/vendor/barryvdh/reflection-docblock" />
       <path value="$PROJECT_DIR$/holybeforumapi/vendor/barryvdh/laravel-ide-helper" />
       <path value="$PROJECT_DIR$/holybeforumapi/vendor/justinrainbow/json-schema" />
+      <path value="$PROJECT_DIR$/holybeforumapi/vendor/vyuldashev/laravel-openapi" />
+      <path value="$PROJECT_DIR$/holybeforumapi/vendor/goldspecdigital/oooas" />
     </include_path>
   </component>
   <component name="PhpUnit">

@@ -32,6 +32,7 @@
       <excludeFolder url="file://$MODULE_DIR$/holybeforumapi/vendor/filp/whoops" />
       <excludeFolder url="file://$MODULE_DIR$/holybeforumapi/vendor/firebase/php-jwt" />
       <excludeFolder url="file://$MODULE_DIR$/holybeforumapi/vendor/fruitcake/laravel-cors" />
+      <excludeFolder url="file://$MODULE_DIR$/holybeforumapi/vendor/goldspecdigital/oooas" />
       <excludeFolder url="file://$MODULE_DIR$/holybeforumapi/vendor/graham-campbell/result-type" />
       <excludeFolder url="file://$MODULE_DIR$/holybeforumapi/vendor/guzzlehttp/guzzle" />
       <excludeFolder url="file://$MODULE_DIR$/holybeforumapi/vendor/guzzlehttp/promises" />
@@ -138,6 +139,7 @@
       <excludeFolder url="file://$MODULE_DIR$/holybeforumapi/vendor/tijsverkoyen/css-to-inline-styles" />
       <excludeFolder url="file://$MODULE_DIR$/holybeforumapi/vendor/vlucas/phpdotenv" />
       <excludeFolder url="file://$MODULE_DIR$/holybeforumapi/vendor/voku/portable-ascii" />
+      <excludeFolder url="file://$MODULE_DIR$/holybeforumapi/vendor/vyuldashev/laravel-openapi" />
       <excludeFolder url="file://$MODULE_DIR$/holybeforumapi/vendor/webmozart/assert" />
     </content>
     <orderEntry type="inheritedJdk" />
