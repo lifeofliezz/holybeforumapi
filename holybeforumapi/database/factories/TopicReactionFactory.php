@@ -26,7 +26,8 @@ class TopicReactionFactory extends Factory
         return [
             'user_id' => User::factory(),
             'content' => $this->faker->paragraph($nbSentences = 3, $variableNbSentences = true),
-            'topic_id' => Topic::factory()
+            //'topic_id' => Topic::factory()
+            'topic_id' => 13
         ];
     }
 }

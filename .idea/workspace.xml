@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9e9ca10-4365-4bac-9cc4-1706c9a6f7c7" name="Default Changelist" comment="forgot pw">
-      <change beforePath="$PROJECT_DIR$/.idea/holybeforumapi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/holybeforumapi.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/holybeforumapi/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/holybeforumapi/app/Http/Controllers/AuthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/holybeforumapi/app/Http/Controllers/TopicApiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/holybeforumapi/app/Http/Controllers/TopicApiController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/holybeforumapi/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/holybeforumapi/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/holybeforumapi/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/holybeforumapi/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/holybeforumapi/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/holybeforumapi/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/holybeforumapi/app/Http/Controllers/ReactionApiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/holybeforumapi/app/Http/Controllers/ReactionApiController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/holybeforumapi/database/factories/TopicReactionFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/holybeforumapi/database/factories/TopicReactionFactory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/holybeforumapi/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/holybeforumapi/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,14 +50,7 @@
         <item name="holybeforumapi@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="holybeforumapi: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-        <item name="topics: table" type="dbc44a63:MariaImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="holybeforumapi@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="holybeforumapi: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-        <item name="users: table" type="dbc44a63:MariaImplModel$Table" />
+        <item name="topic_reactions: table" type="dbc44a63:MariaImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -390,7 +378,7 @@
       <workItem from="1620587797411" duration="3344000" />
       <workItem from="1620985776048" duration="13878000" />
       <workItem from="1622892139118" duration="29126000" />
-      <workItem from="1623243480011" duration="13027000" />
+      <workItem from="1623243480011" duration="21846000" />
     </task>
     <task id="LOCAL-00001" summary="fill controller&#10;topic update&#10;topic delete">
       <created>1613814620226</created>
@@ -436,11 +424,11 @@
     <option name="LAST_COMMIT_MESSAGE" value="forgot pw" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2520" y="225" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1623176246038">
+    <state x="2520" y="225" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1624191395595">
       <screen x="1920" y="0" width="1739" height="939" />
     </state>
     <state x="600" y="225" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1739.939/1920.0.1739.939@0.0.1739.939" timestamp="1623049103532" />
-    <state x="2520" y="225" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1739.939/1920.0.1739.939@1920.0.1739.939" timestamp="1623176246038" />
+    <state x="2520" y="225" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1739.939/1920.0.1739.939@1920.0.1739.939" timestamp="1624191395595" />
     <state width="1696" height="249" key="GridCell.Tab.0.bottom" timestamp="1623225315718">
       <screen x="1920" y="0" width="1739" height="939" />
     </state>
@@ -461,6 +449,10 @@
       <screen x="1920" y="0" width="1739" height="939" />
     </state>
     <state x="2505" y="285" key="NewPhpClassDialog/0.0.1739.939/1920.0.1739.939@1920.0.1739.939" timestamp="1623852055217" />
+    <state x="379" y="113" key="SettingsEditor" timestamp="1624052867862">
+      <screen x="0" y="0" width="1739" height="939" />
+    </state>
+    <state x="379" y="113" key="SettingsEditor/0.0.1739.939/1920.0.1739.939@0.0.1739.939" timestamp="1624052867862" />
     <state x="2486" y="294" key="com.intellij.ide.util.TipDialog" timestamp="1623243481080">
       <screen x="1920" y="0" width="1739" height="939" />
     </state>

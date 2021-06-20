@@ -17,7 +17,7 @@ class ReactionApiController extends Controller
     public function index($id){
         return TopicReaction::find($id)
             ->join('users', 'user_id', '=', 'users.id')
-            ->select('topic_reactions.content', 'topic_reactions.created_at', 'topic_reactions.updated_at', 'users.username', 'users.profilePicture', 'users.moderator', 'users.status')
+            ->select('topic_reactions.id','topic_reactions.content', 'topic_reactions.created_at', 'topic_reactions.updated_at', 'users.username', 'topic_reactions.user_id', 'users.profilePicture', 'users.moderator', 'users.status')
             ->where('topic_reactions.topic_id','=',$id)
             ->get();
     }
@@ -46,12 +46,11 @@ class ReactionApiController extends Controller
 
     //delete a reaction
     public function delete(TopicReaction $reaction){
-        $success = $reaction->delete();
+        $reaction->delete();
 
-        return[
-            'success' => $success
-        ];
+        return response()->json(null, 204);
     }
+
 
     //search topics and reactions
     public function search($term){
