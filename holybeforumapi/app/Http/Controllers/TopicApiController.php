@@ -47,7 +47,8 @@ class TopicApiController extends Controller
 
         $success = $request->user()->topics()->create($request->only('title','content'));
         return [
-            'success' => $success
+            //'success' =>
+                $success
         ];
     }
 

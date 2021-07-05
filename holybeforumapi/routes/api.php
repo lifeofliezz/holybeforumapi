@@ -79,7 +79,7 @@ Route::post('/createreaction',[ReactionApiController::class, 'store'])->middlewa
 Route::put('/updatereaction/{topicreaction}',[ReactionApiController::class, 'update'])->middleware('auth:api');
 
 //delete a reaction
-Route::delete('/deletereactions/{reaction}',[ReactionApiController::class, 'delete'])->middleware('auth:api');
+Route::delete('/deletereaction/{reaction}',[ReactionApiController::class, 'delete'])->middleware('auth:api');
 
 //search
 Route::get('/searchreactions/{term}',[ReactionApiController::class, 'search'])->middleware('auth:api');

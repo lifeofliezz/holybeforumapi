@@ -33,7 +33,8 @@ class ReactionApiController extends Controller
 
         $success = $request->user()->topic_reactions()->create($request->only('content', 'topic_id'));
         return [
-            'success' => $success
+            //'success' =>
+                $success
         ];
     }
 
